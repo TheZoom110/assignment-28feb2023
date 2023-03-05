@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type = "text/javascript" src="script.js"></script>  
+    <title>Jumbled Words game</title>
+</head>
+<body onLoad="initial()">
+<div id="container">
+
+<h1>Jumbled words game</h1>
+
+<div id="pnames">
+    <p>Please enter player names to begin:</p>
+    <form>
+        <div class="formrow">
+            <label for="p1name">Player 1 name:</label>
+            <input class="two" type="text" id="p1name" name="p1name" required placeholder="Enter player 1 name">
+        </div>
+        <div class="formrow">
+            <label for="p2name">Player 2 name:</label>
+            <input class="two" type="text" id="p2name" name="p2name" required placeholder="Enter player 2 name">
+        </div>
+    </form>
+    <button onclick="pnames()">Let's begin</button>
+</div>
+
+<div id="playbox">
+    <div id="scorebox">
+        <strong id="pscore">SCORE TABLE:</strong><br>
+        <b id="p1s"></b><br>
+        <b id="p2s"></b>
+    </div>
+    <div id="pbox">
+        <h2 id="phead"></h2>
+        <h3 id="phead3">Your jumbled word is: </h3>
+        <h3 id="pqn"></h3>
+        <form id="pinput">
+            <div class="formrow">
+                <label for="pans">Your answer:</label>
+                <input class="two" type="text" id="pans" name="pans" required placeholder="Enter your answer">
+            </div>
+        </form>
+        <button onclick="onSubmit()">Submit</button>
+    </div>
+</div>
+<div id="incorrect">THIS IS INCORRECT <span id="pincorrect"></span></div>
+<div id="correct">THIS IS CORRECT <span id="pcorrect"></span></div>
+<div id="timer"></div>
+<div id="result">
+    <div id="resultinner">
+        <strong id="pscore">FINAL SCORE TABLE:</strong><br>
+        <b id="p1sf"></b><br>
+        <b id="p2sf"></b>
+    </div>
+    <b id="winner">The Winner is Soukarya</b>
+</div>
+<div id="footer">
+    <hr>
+    <div id="attrib">Created by <a href="https://github.com/TheZoom110">TheZoom110</a> and hosted on <a href="https://github.com/TheZoom110/assignment-21dec">github</a>
+</div>
+</div>
+
+</div>
+</body>
+</html>
